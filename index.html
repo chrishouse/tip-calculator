@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h4 class="service-heading">How was the service?</h4>
+        <div class="service-button exceptional">Exceptional (25%)</div>
+        <div class="service-button standard checked">Standard (20%)</div>
+        <div class="service-button subpar">Subpar (15%)</div>
+        <div class="service-button bad">Bad (10%)</div>
+        <div class="service-button terrible">Terrible (5%)</div>
+        <div class="service-button custom">Custom: <input class="input-custom" type="number"> %</div>
+
+        <h4 class="bill-heading">How much was the bill?</h4>
+        <p class="bill-para"><input type="number" step="0.01" class="bill"></p>
+        <p class="error"></p>
+
+        <button type="submit">Calculate Tip</button>    
+        <p class="tip">Tip:<br><span></span></p>
+        <p class="total">Total:<br><span></span></p>
+    </form>
+</body>
+</html>

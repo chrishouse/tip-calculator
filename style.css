@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    text-align: center;
+    font-family: Arial;
+    background-color: rgb(198, 232, 243);
+    padding-top: 25px;
+}
+
+form{
+    display: inline-block;
+    padding-bottom: 30px;  
+}
+
+h4{
+    background-color: #265ed6;
+    color: white;
+    padding: 7px 14px;
+    margin-bottom: 10px;
+}
+
+.service-button{
+    width: 100%;
+    border: 0;
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+.service-button.checked:before{
+    content: '\2713';
+    position: absolute;
+    left: 15px;
+}
+
+.exceptional{
+    background-color: #20a73d;
+}
+
+.standard{
+    background-color: #a1ce26;
+}
+
+.subpar{
+    background-color: #ecc826;
+}
+
+.bad{
+    background-color: #d46c27;
+}
+
+.terrible{
+    background-color: #b31313;
+}
+
+.custom{
+    color: grey;
+}
+
+.custom.checked{
+    color: black;
+}
+
+.input-custom{
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 65px;
+    color: grey;
+    background-color: lightgrey;
+}
+
+.custom.checked .input-custom{
+    background-color: white;
+    color: black;
+}
+
+.bill-heading{
+    margin-top: 15px;
+}
+
+.bill-para{
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 2px;;
+}
+
+.bill{
+    border: none;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.error{
+    color: red;
+    padding-top: 5px;
+}
+
+button[type="submit"]{
+    display: inline-block;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: #265ed6;
+    color: white;
+    cursor: pointer;
+}
+
+.tip, .total{
+    display: none;
+    font-size: 20px;
+}
+
+.tip{
+    padding: 10px;    
+}
+
+.tip span{
+    font-weight: bold;
+}
+
+.total{
+    padding-top: 10px;
+}
+
+.total span{
+    font-size: 44px;
+    font-weight: bold;
+}
